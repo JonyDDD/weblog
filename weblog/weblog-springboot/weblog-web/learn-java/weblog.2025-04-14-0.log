@@ -1,0 +1,10 @@
+2025-04-14 22:55:06.478 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 43956 (started by JonyD-Windows in F:\learn-java\weblog\weblog\weblog-springboot\weblog-web)
+2025-04-14 22:55:06.479 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - The following profiles are active: prod
+2025-04-14 22:55:07.281 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.113 seconds (JVM running for 1.828)
+2025-04-14 22:55:07.406 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - 这是一行 Info 级别日志
+2025-04-14 22:55:07.406 [main] WARN  com.johnthan.weblogweb.WeblogWebApplicationTests - 这是一行 Warn 级别日志
+2025-04-14 22:55:07.406 [main] ERROR com.johnthan.weblogweb.WeblogWebApplicationTests - 这是一行 Error 级别日志
+2025-04-14 22:55:07.406 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - 这是一行带有占位符日志，作者：JonyDDD
+2025-04-14 22:55:19.341 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - Starting WeblogWebApplicationTests using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 13408 (started by JonyD-Windows in F:\learn-java\weblog\weblog\weblog-springboot\weblog-web)
+2025-04-14 22:55:19.341 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - The following profiles are active: prod
+2025-04-14 22:55:20.169 [main] INFO  com.johnthan.weblogweb.WeblogWebApplicationTests - Started WeblogWebApplicationTests in 1.144 seconds (JVM running for 1.897)

@@ -1,0 +1,9 @@
+server:
+  port: 9091  # 服务端口
+  servlet:
+    context-path: /api/prod  # 统一API前缀
+#=================================================================
+# log 日志
+#=================================================================
+logging:
+  config: classpath:logback-weblog.xml

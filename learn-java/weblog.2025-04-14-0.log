@@ -1,0 +1,45 @@
+2025-04-14 22:55:22.307 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 14008 (F:\learn-java\weblog\weblog\weblog-springboot\weblog-web\target\classes started by JonyD-Windows in F:\learn-java\weblog)
+2025-04-14 22:55:22.309 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - The following profiles are active: prod
+2025-04-14 22:55:22.728 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+2025-04-14 22:55:22.733 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-14 22:55:22.733 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-04-14 22:55:22.773 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/prod] - Initializing Spring embedded WebApplicationContext
+2025-04-14 22:55:22.774 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 443 ms
+2025-04-14 22:55:22.933 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path '/api/prod'
+2025-04-14 22:55:22.938 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Started WeblogWebApplication in 0.909 seconds (JVM running for 1.705)
+2025-04-14 22:55:26.062 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 6796 (F:\learn-java\weblog\weblog\weblog-springboot\weblog-web\target\classes started by JonyD-Windows in F:\learn-java\weblog)
+2025-04-14 22:55:26.065 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - The following profiles are active: prod
+2025-04-14 22:55:26.504 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+2025-04-14 22:55:26.508 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-14 22:55:26.508 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-04-14 22:55:26.551 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/prod] - Initializing Spring embedded WebApplicationContext
+2025-04-14 22:55:26.551 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 457 ms
+2025-04-14 22:55:26.721 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path '/api/prod'
+2025-04-14 22:55:26.726 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Started WeblogWebApplication in 0.944 seconds (JVM running for 1.766)
+2025-04-14 22:55:51.056 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 33272 (F:\learn-java\weblog\weblog\weblog-springboot\weblog-web\target\classes started by JonyD-Windows in F:\learn-java\weblog)
+2025-04-14 22:55:51.058 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - The following profiles are active: prod
+2025-04-14 22:55:51.474 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+2025-04-14 22:55:51.479 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-14 22:55:51.479 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-04-14 22:55:51.519 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/prod] - Initializing Spring embedded WebApplicationContext
+2025-04-14 22:55:51.519 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 439 ms
+2025-04-14 22:55:51.679 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path '/api/prod'
+2025-04-14 22:55:51.684 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Started WeblogWebApplication in 0.895 seconds (JVM running for 1.661)
+2025-04-14 22:56:07.720 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 30288 (F:\learn-java\weblog\weblog\weblog-springboot\weblog-web\target\classes started by JonyD-Windows in F:\learn-java\weblog)
+2025-04-14 22:56:07.722 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - The following profiles are active: prod
+2025-04-14 22:56:08.387 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+2025-04-14 22:56:08.396 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-14 22:56:08.396 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-04-14 22:56:08.459 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/prod] - Initializing Spring embedded WebApplicationContext
+2025-04-14 22:56:08.459 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 686 ms
+2025-04-14 22:56:08.755 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path '/api/prod'
+2025-04-14 22:56:08.761 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Started WeblogWebApplication in 1.506 seconds (JVM running for 2.406)
+2025-04-14 23:01:00.891 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Starting WeblogWebApplication using Java 1.8.0_441 on DESKTOP-6QAE5IA with PID 38524 (F:\learn-java\weblog\weblog\weblog-springboot\weblog-web\target\classes started by JonyD-Windows in F:\learn-java\weblog)
+2025-04-14 23:01:00.893 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - The following profiles are active: prod
+2025-04-14 23:01:01.315 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+2025-04-14 23:01:01.319 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-14 23:01:01.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-04-14 23:01:01.359 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/prod] - Initializing Spring embedded WebApplicationContext
+2025-04-14 23:01:01.359 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 445 ms
+2025-04-14 23:01:01.520 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path '/api/prod'
+2025-04-14 23:01:01.525 [main] INFO  com.johnthan.weblogweb.WeblogWebApplication - Started WeblogWebApplication in 0.902 seconds (JVM running for 1.688)
