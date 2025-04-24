@@ -6,4 +6,4 @@ server:
 # log 日志
 #=================================================================
 logging:
-  config: classpath:logback-weblog.xml
+#  config: classpath:logback-weblog1.xml
