@@ -1,9 +1,14 @@
-package com.johnthan.weblogweb.demos.web;
+package com.johnthan.weblogweb.controller;
 
 import com.johnthan.module.common.aspect.ApiOperationLog;
 import com.johnthan.module.common.enums.ResponseCodeEnum;
 import com.johnthan.module.common.exception.BizException;
+import com.johnthan.module.common.utils.JsonUtil;
 import com.johnthan.module.common.utils.Response;
+import com.johnthan.weblogweb.demos.web.User;
+import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -13,11 +18,29 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/test")
 public class TestController {
+    private static final Logger log = LoggerFactory.getLogger(TestController.class);
+
+    @PostMapping("/newTime")
+    @ApiOperation(value =  "测试时间接口")
+    @ApiOperationLog(description = "测试时间")
+    public Response TestNewTime(@RequestBody @Validated User user){
+        log.info("RequestBody:{}", JsonUtil.toJsonString(user));
+
+        user.setCreateTime(LocalDateTime.now());
+        user.setUpdateDate(LocalDate.now());
+        user.setTime(LocalTime.now());
+
+        return Response.success(user);
+    }
+
 
     @PostMapping("/testUser")
     @ApiOperationLog(description = "测试用户参数")
@@ -56,9 +79,9 @@ public class TestController {
         return Response.success();
     }
 
-        @PostMapping("/testSuccess")
-        @ApiOperationLog(description = "测试成功")
-        public Response<String> testSuccessRequest(){
-            return  Response.success("请求成功");
+    @PostMapping("/testSuccess")
+    @ApiOperationLog(description = "测试成功")
+    public Response<String> testSuccessRequest(){
+        return  Response.success("请求成功");
     }
 }

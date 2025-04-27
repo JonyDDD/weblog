@@ -17,11 +17,53 @@
 package com.johnthan.weblogweb.demos.web;
 
 import javax.validation.constraints.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
 public class User {
+    // 创建时间
+    private LocalDateTime createTime;
+    // 更新日期
+    private LocalDate updateDate;
+    // 时间
+    private LocalTime time;
+
+    public LocalDateTime getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(LocalDateTime createTime) {
+        this.createTime = createTime;
+    }
+
+    public LocalDate getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(LocalDate updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalTime time) {
+        this.time = time;
+    }
+
+    public @NotBlank(message = "用户名不能为空") String getUsername() {
+        return username;
+    }
+
+    public void setUsername(@NotBlank(message = "用户名不能为空") String username) {
+        this.username = username;
+    }
+
     // 用户名
     @NotBlank(message = "用户名不能为空") // 注解确保用户名不为空
     private String username;
@@ -71,4 +113,5 @@ public class User {
     public void setEmail(@NotBlank(message = "邮箱不能为空") @Email(message = "邮箱格式不正确") String email) {
         this.email = email;
     }
-}
+
+    }

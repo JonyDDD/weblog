@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
 @Aspect
 @Component
 @Slf4j
+
+
 public class ApiOperationLogAspect {
 
     /** 以自定义 @ApiOperationLog 注解为切点，凡是添加 @ApiOperationLog 的方法，都会执行环绕中的代码 */
@@ -36,7 +38,7 @@ public class ApiOperationLogAspect {
             // 请求开始时间
             long startTime = System.currentTimeMillis();
 
-            // MDC
+            // MDC（日志追踪）
             MDC.put("traceId", UUID.randomUUID().toString());
 
             // 获取被请求的类和方法

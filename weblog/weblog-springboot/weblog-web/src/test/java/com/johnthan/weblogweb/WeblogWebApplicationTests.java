@@ -4,6 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 
 @Slf4j
 @SpringBootTest
@@ -11,6 +14,12 @@ class WeblogWebApplicationTests {
 
     @Test
     void contextLoads() {
+        // 获取当前日期
+        Date today = new Date();
+        log.info("today :{}", String.format(today.toString(), "yyyy-MM-dd "));
+        // localDate
+        LocalDate localDate = LocalDate.now();
+        log.info("localDate :{}", localDate.plusDays(4));
     }
 
 
