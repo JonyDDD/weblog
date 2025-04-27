@@ -16,28 +16,59 @@
 
 package com.johnthan.weblogweb.demos.web;
 
+import javax.validation.constraints.*;
+
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
 public class User {
+    // 用户名
+    @NotBlank(message = "用户名不能为空") // 注解确保用户名不为空
+    private String username;
+    // 性别
+    @NotNull(message = "性别不能为空") // 注解确保性别不为空
+    private Integer sex;
 
-    private String name;
-
+    // 年龄
+    @NotNull(message = "年龄不能为空")
+    @Min(value = 18, message = "年龄必须大于或等于 18")  // 注解确保年龄大于等于 18
+    @Max(value = 100, message = "年龄必须小于或等于 100")  // 注解确保年龄小于等于 100
     private Integer age;
 
-    public String getName() {
-        return name;
+    // 邮箱
+    @NotBlank(message = "邮箱不能为空")
+    @Email(message = "邮箱格式不正确")  // 注解确保邮箱格式正确
+    private String email;
+
+    public @NotBlank(message = "用户名不能为空") String getName() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(@NotBlank(message = "用户名不能为空") String username) {
+        this.username = username;
     }
 
-    public Integer getAge() {
+    public @NotNull(message = "性别不能为空") Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(@NotNull(message = "性别不能为空") Integer sex) {
+        this.sex = sex;
+    }
+
+    public @NotNull(message = "年龄不能为空") @Min(value = 18, message = "年龄必须大于或等于 18") @Max(value = 100, message = "年龄必须小于或等于 100") Integer getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(@NotNull(message = "年龄不能为空") @Min(value = 18, message = "年龄必须大于或等于 18") @Max(value = 100, message = "年龄必须小于或等于 100") Integer age) {
         this.age = age;
+    }
+
+    public @NotBlank(message = "邮箱不能为空") @Email(message = "邮箱格式不正确") String getEmail() {
+        return email;
+    }
+
+    public void setEmail(@NotBlank(message = "邮箱不能为空") @Email(message = "邮箱格式不正确") String email) {
+        this.email = email;
     }
 }
