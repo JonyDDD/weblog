@@ -1,7 +1,10 @@
 package com.johnthan.weblogweb;
 
+import com.johnthan.module.common.domain.dos.UserDO;
+import com.johnthan.module.common.domain.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDate;
@@ -11,6 +14,29 @@ import java.util.Date;
 @Slf4j
 @SpringBootTest
 class WeblogWebApplicationTests {
+
+    @Autowired
+    private  UserMapper userMapper ;
+
+    @Test
+    void insertDataSourceByUser(){
+        UserDO userDO = UserDO.builder()
+                .username("Jonyd")
+                .password("33620")
+                .createTime(new Date())
+                .updateTime(new Date())
+                .isDeleted(false)
+                .build();
+            userMapper.insert(userDO);
+            log.info("成功插入数据");
+    }
+
+    @Test
+    void DeleteDataSourceByUser(){
+       UserDO user = userMapper.selectById(1);
+        userMapper.deleteById(user.getId());
+        log.info("成功删除数据：{}" ,user );
+    }
 
     @Test
     void contextLoads() {
