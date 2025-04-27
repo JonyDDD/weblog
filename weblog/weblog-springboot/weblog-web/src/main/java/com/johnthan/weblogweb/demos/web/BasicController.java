@@ -39,6 +39,7 @@ public class BasicController {
     }
 
     // http://127.0.0.1:8080/user
+    @ApiOperationLog(description = "测试用户")
     @RequestMapping("/user")
     @ResponseBody
     public User user() {
