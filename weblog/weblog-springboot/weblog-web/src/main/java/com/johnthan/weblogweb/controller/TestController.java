@@ -24,7 +24,7 @@ import java.time.LocalTime;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/admin/test")
 public class TestController {
     private static final Logger log = LoggerFactory.getLogger(TestController.class);
 

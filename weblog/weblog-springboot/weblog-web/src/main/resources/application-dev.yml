@@ -2,6 +2,10 @@ server:
   port: 9090  # 服务端口
   servlet:
     context-path: /api/  # 统一API前缀
+  security:
+    user:
+      name: jonyD # 登录用户名
+      password: 123456 # 登录密码
 spring:
   datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
